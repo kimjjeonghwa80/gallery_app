@@ -12,7 +12,7 @@ on click of Create user will see the add photo page  where he can add the photo.
 
 List Album :- In this option user will see all his album with thumbnail image  and edit album name and add photo album
 
-on click of image all user added image get display. on click of any image user will see previous and next option to see images.
+on click of image all user added image get display with delete option. on click of any image user will see previous and next option to see images.
 
 to edit album name on click of edit album provide input box where user can enter album name and update album name option. 
 
