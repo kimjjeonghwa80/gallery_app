@@ -7,7 +7,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-class AlbumController extends AppController {
+class AlbumsController extends AppController {
     var $helpers = array('Form', 'Html', 'Javascript');
     public $uses = array(
         'Album',

@@ -4,43 +4,43 @@ Album.Gallery.model = (function(){
     return{
         createAlbumModel:Backbone.Model.extend({
             initialize:function(){
-                this.url ='album/addAlbum/';
+                this.url ='albums/addAlbum/';
             },
             url:this.url
         }),
         userLoginModel : Backbone.Model.extend({
             initialize:function(){
-                this.url = 'album/userlogin/'
+                this.url = 'albums/userlogin/'
             },
             url:this.url
         }),
         addPhotoModel : Backbone.Model.extend({
             initialize:function(){
-                this.url = 'album/addPhoto/'
+                this.url = 'albums/addPhoto/'
             },
             url:this.url
         }),
         listAlbumModel : Backbone.Model.extend({
             initialize:function(userId){
-                this.url = 'album/listAlbum/'+userId
+                this.url = 'albums/listAlbum/'+userId
             },
             url:this.url
         }),
         listPhotoModel : Backbone.Model.extend({
             initialize:function(albumId){
-                this.url = 'album/listPhoto/'+albumId
+                this.url = 'albums/listPhoto/'+albumId
             },
             url:this.url
         }),
         deletePhotoModel : Backbone.Model.extend({
             initialize:function(photoId){
-                this.url = 'album/deletePhoto/'+photoId
+                this.url = 'albums/deletePhoto/'+photoId
             },
             url:this.url
         }),
         editAlbumNameModel : Backbone.Model.extend({
             initialize:function(albumId){
-                this.url = 'album/editAlbumName/'+albumId
+                this.url = 'albums/editAlbumName/'+albumId
             },
             url:this.url
         })
