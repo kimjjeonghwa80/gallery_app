@@ -10,7 +10,7 @@ Album.Gallery.model = (function(){
         }),
         userLoginModel : Backbone.Model.extend({
             initialize:function(){
-                this.url = 'albums/userlogin/'
+                this.url = 'albums/userLogin/'
             },
             url:this.url
         }),

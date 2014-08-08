@@ -22,7 +22,7 @@ class AlbumsController extends AppController {
 
     }
 
-    public function userlogin(){
+    public function userLogin(){
         $this->layout = 'ajax';
         $this->autoRender = false;
         $data = json_decode(file_get_contents('php://input'));

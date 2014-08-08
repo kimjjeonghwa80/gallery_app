@@ -8,10 +8,12 @@ class User extends AppModel {
                   ));
         if($type == "register"){
             if(!empty($userId)){
-                $sendUserData = array('error' => 'user with same username exist');
+                return array('error' => 'user with same username exist');
             } else{
-                $data = array('');
-                $userId = $this->create();
+                $data = array('User' => array('username' => $userName,'password'=>$password));
+                $this->create($data);
+                $this->save();
+                $userId = $this->id;
             }
         }
         if ($userId) {
